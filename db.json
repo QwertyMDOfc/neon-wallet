@@ -1,0 +1,50 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "john_doe",
+      "email": "john@example.com",
+      "password": "cGFzc3dvcmQxMjM=",
+      "balance": 1000000,
+      "transactions": [
+        {
+          "id": 1,
+          "type": "topup",
+          "amount": 1000000,
+          "timestamp": "2023-05-15T10:00:00Z",
+          "description": "Initial deposit"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "username": "jane_smith",
+      "email": "jane@example.com",
+      "password": "cGFzc3dvcmQxMjM=",
+      "balance": 500000,
+      "transactions": [
+        {
+          "id": 1,
+          "type": "topup",
+          "amount": 500000,
+          "timestamp": "2023-05-15T10:05:00Z",
+          "description": "Initial deposit"
+        }
+      ]
+    }
+  ],
+  "transfers": [
+    {
+      "id": 1,
+      "from_user_id": 1,
+      "to_user_id": 2,
+      "amount": 200000,
+      "timestamp": "2023-05-15T11:00:00Z",
+      "note": "Lunch money",
+      "status": "completed"
+    }
+  ],
+  "next_user_id": 3,
+  "next_transaction_id": 2,
+  "next_transfer_id": 2
+}
